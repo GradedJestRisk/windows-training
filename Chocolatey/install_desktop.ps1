@@ -43,8 +43,23 @@ choco install git-fork
 
 :: Language-specific develoment tools
 
-:: - JS
-choco install vscode       
+:: - Javascript
+choco install nodejs 
+
+:: -- specific installs
+
+npm install –g mocha
+npm install puppeteer --save
+
+:: -- editors
+choco install vscode    
+
+:: -- editors extensions
+code --install-extension donjayamanne.githistory
+code --install-extension ecmel.vscode-html-css
+code --install-extension ms-vscode.powershell
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension streetsidesoftware.code-spell-checker
 
 :: - Java
 choco install intellij       
@@ -54,8 +69,5 @@ choco install sqldevelopper
 
 :: - Devops
 :: choco install docker-desktop  :: look like broken
-
-:: - Javascript
-choco install nodejs 
 
 refreshenv
